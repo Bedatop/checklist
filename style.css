@@ -98,3 +98,8 @@ ul>li {
 .item.done {
     text-decoration: line-through;
 }
+
+.add {
+    text-decoration: line-through;
+    color: rgb(95, 95, 95);
+}
