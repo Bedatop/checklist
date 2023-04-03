@@ -4,6 +4,7 @@ let ul = document.querySelector('#list')
 
 add.addEventListener('click', function () {
     let li = document.createElement('li');
+    li.classList.add('style');
     li.innerHTML = inp.value;
     ul.appendChild(li);
     inp.value = '';
@@ -13,12 +14,17 @@ add.addEventListener('click', function () {
     check.addEventListener('click', function () {
         li.classList.toggle('add');
     })
-    let del = document.createElement('a');
+    /*let del = document.createElement('a');
     del.href = ''
-    del.innerHTML ='X';
+    del.innerHTML = 'X';
+    li.appendChild(del);*/
+    let del = document.createElement('button');
+    del.innerHTML = 'X';
+    del.classList.add('del')
     li.appendChild(del);
     del.addEventListener('click', function (ev) {
         ev.preventDefault();
         li.parentElement.removeChild(li)
     })
 })
+

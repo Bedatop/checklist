@@ -41,8 +41,10 @@ ul>li {
     justify-content: space-between;
     overflow: hidden;
     border-radius: 3px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.514);
+    box-shadow: 0px 0px 20px rgba(112, 33, 99, 0.514);
     flex-basis: 450px;
+    border: none;
+    outline: none;
 }
 
 /* Поле ввода */
@@ -76,7 +78,7 @@ ul>li {
     justify-content: space-between;
     margin-bottom: 10px;
     border-radius: 3px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.514);
+    box-shadow: 0px 0px 20px rgba(112, 33, 99, 0.514);
     background-color: white;
 }
 
@@ -102,4 +104,21 @@ ul>li {
 .add {
     text-decoration: line-through;
     color: rgb(95, 95, 95);
+}
+
+.style {
+    margin-bottom: 10px;
+    border-radius: 3px;
+    padding: 8px;
+    box-shadow: 0px 0px 20px rgba(112, 33, 99, 0.514);
+    background-color: white;
+
+}
+
+.del {
+    border-radius: 3px;
+    margin-left: 5px;
+    border-color: rgb(112, 33, 99);
+    color: rgb(112, 33, 99);
+    background-color: rgb(231, 172, 221);
 }
